@@ -10,12 +10,23 @@
             //int[] scores = new int[10]; //An array with a rooom for 10 items in it.
 
 
-             //LENGTH OF ARRAY
-            int[] scores = new[] { 100, 90, 80, 70, 60 };
+            //LENGTH OF ARRAY
+            //int[] scores = new[] { 100, 90, 80, 70, 60 };
 
-            int totalLengthInArray = scores.Length;
+            //int totalLengthInArray = scores.Length;
 
-            Console.WriteLine(totalLengthInArray);
+            //Console.WriteLine(totalLengthInArray);
+
+            //MINIMUM VALUE IN AN ARRAY
+            int[] array = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
+            int currentMinimum = Int32.MaxValue; // We start high, so that any element in the array will be lower.
+            for (int index = 0; index < array.Length; index++)
+            {
+                if (array[index] < currentMinimum)
+                    currentMinimum = array[index];                
+            }
+            Console.WriteLine(currentMinimum);
+
 
 
 
