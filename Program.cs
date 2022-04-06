@@ -28,17 +28,36 @@
             //Console.WriteLine(currentMinimum);
 
             //AVERAGE VALUE IN AN ARRAY
-            int[] array = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
+            //int[] array = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
 
-            int total = 0;
+            //int total = 0;
 
-            for (int index = 0; index < array.Length; index++)
+            //for (int index = 0; index < array.Length; index++)
+            //{
+            //total += array[index];
+            //Console.WriteLine(total);
+            //}
+            //float average = (float)total / array.Length;
+            //Console.WriteLine(average);
+
+            //ARRAY OF ARRAYS AND MULTI-DIMENTIONAL ARRAYS
+            //array of arrays, or a jagged array(array within a larger array has a different lenght)
+            int[][] matrix = new int[4][];
+
+            matrix[0] = new int[4];
+            matrix[1] = new int[5];
+            matrix[2] = new int[2];
+            matrix[3] = new int[6];
+
+            for (int row = 0; row < matrix.Length; row++)
             {
-                total += array[index];
-                //Console.WriteLine(total);
+                for (int column = 0; column < matrix[row].Length; column++)
+                    Console.Write(matrix[row][column] + " "); // Each item in the row separated by spaces
+
+                Console.WriteLine(); // Rows separated by lines
             }
-            float average = (float)total / array.Length;
-            Console.WriteLine(average);
+
+
 
 
 
