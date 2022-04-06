@@ -69,10 +69,21 @@
             //}
 
             //FOREACH LOOP
-            int[] scores = new int[] {75, 44, 34, 25,78, 89, 90, 69, 45, 36};
+            //int[] scores = new int[] {75, 44, 34, 25,78, 89, 90, 69, 45, 36};
+            /* note is that inside of the loop, you 
+            /have no way of knowing what index you are currently at. (You don’t know if you are on scores[2] or
+            scores[4].)
+            If you need to know what index you’re at, your best bet is to use a FOR LOOP instead:*/
+            //foreach (int score in scores)
+            //Console.WriteLine("Someone had this score: " + score);
 
-            foreach(int score in scores)
-                Console.WriteLine("Someone had this score: " + score);
+            //FOR LOOP(To know what index we are at unlike with FOREACH LOOP)
+            int[] scores = new [] { 75, 44, 34, 25, 78, 89, 90, 69, 45, 36 }; ;
+            for (int index = 0; index < scores.Length; index++)
+            {
+                int score = scores[index];
+                Console.WriteLine("Score #" + index + ": " + score);
+            }
 
 
 
