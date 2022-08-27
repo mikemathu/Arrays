@@ -175,7 +175,18 @@
                 j++;
             }
 
-            
+            //using do while loop
+            Console.WriteLine(" ");
+            Console.Write("Do While Loop :");
+
+            int k = 0;
+            do
+            {
+                Console.Write(" " + intArray[k]);
+                k++;
+            } while (k < intArray.Length);
+
+        
 
 
 
