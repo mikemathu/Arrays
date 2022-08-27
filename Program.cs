@@ -85,25 +85,56 @@
                   Console.WriteLine("Score #" + index + ": " + score);
               }*/
 
+
+       
+
            /* int[,] arr = new int[2, 2 ] { {3,5 }, {9,6 } };
 
             Console.Out.WriteLine(arr[0,1])*/;
 
-
-
             //ITERATE OVER AN ARRAY
             //int[] arr = new[] { 1, 2, 3, 4, 5, 6 };
 
-           /* for(int index = 0; index< arr.Length; index++)
-            {
-                Console.WriteLine(arr[index]);
-            }*/
+            /* for(int index = 0; index< arr.Length; index++)
+             {
+                 Console.WriteLine(arr[index]);
+             }*/
 
             //using for loop
-           /* foreach (int no in arr)
-            {
-                Console.WriteLine(no);
-            }*/
+            /* foreach (int no in arr)
+             {
+                 Console.WriteLine(no);
+             }*/
+
+            //ARRAY DECLARATION
+            //int[] arr; //not allocated to the memory
+
+            //ARRAY INITIALIZATION
+            //int[] arr = new int[5];//new keyword allocates the array to the memory with the specified size
+
+            //int[] arr = new int[5] { 1, 2, 3, 4, 5 }; //Defining an array and assigning values at the same time
+            //int[] arr = { 1, 2, 3, 4, 5 }; 
+            //int[] arr = new[] { 1, 2, 3, 4, 5 };
+
+            //INITIALIZATION OF AN ARRAY AFTER DECLARATION
+          /*  int[] arr; //Decraration
+            //arr =new int[5] { 1,2,3,4,5};
+            //arr = new int[5];
+            arr =new[] { 1,2,3,4,5};
+
+            string[] s;
+            s = new string[2] {"Mike", "Mathu"};*/
+
+
+
+
+            
+
+
+
+
+
+            
 
 
 
