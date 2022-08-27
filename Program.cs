@@ -137,8 +137,8 @@
 
 
             //ACCESSING ARRAY ELEMENTS USING DIFFERENT LOOPS
-            
-            int[] intArray;
+
+            /*int[] intArray;
 
             intArray = new int[5]; //allocating memory for the 5 integers
 
@@ -184,11 +184,50 @@
             {
                 Console.Write(" " + intArray[k]);
                 k++;
-            } while (k < intArray.Length);
-
-        
+            } while (k < intArray.Length);*/
 
 
+            //MULTIDIMENTIONAL ARRAYS. To storing and accessing the values of the array, one require the nested loop.
+            //int[,] arr = new int[2,2];
+            //int[, ] arry = new int[ , ] { { 1, 2 }, { 1,2} };
+
+            //Two-dimentional array
+            int[, ] intarray = new int[,] { {1, 2}, {3,4 }, {5, 6 }, { 7, 8} };
+
+            //same array with dimentions specified
+            int[,] intarray_d = new int[4, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };
+
+            //similar array with string elements
+            string[,] str = new string[4, 2] { { "one", "two" }, { "three", "four" }, { "five", "six" }, { "seven", "eight" } };
+
+            //Three-dimentional arrays
+            int[,,] intarray3D = new int[,, ] { { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } } };
+
+            //The same 3D array specified
+            //int[,, ] intarrat3Dd = new int[2,2, 3] { { { 1, 2,3  }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } } };
+
+            //Accesing array elements
+            /*   Console.WriteLine("2DArray[0][0] : " + intarray[0, 0]);
+               Console.WriteLine("2DArray[0][1] : " + intarray[0, 1]);
+               Console.WriteLine("2DArray[1][1] : " + intarray[1, 1]);
+               Console.WriteLine("2DArray[2][0] : " + intarray[2, 0]);
+
+               Console.WriteLine("2DArray[1][1] (other) : " + intarray_d[1, 1]);
+
+               Console.WriteLine("2DArray[1][0] (other) : " + intarray_d[1, 0]);*/
+
+            //Console.WriteLine("3DArray[1][0][1] (other) : " + intarray3D[1, 0, 1]);
+            //Console.WriteLine("3DArray[1][1][2] (other) : " + intarray3D[1, 1, 2]);
+            //Console.WriteLine("3DArray[0][1][1] (other) : " + intarray3Dd[0, 1, 1]);
+            //Console.WriteLine("3DArray[1][0][2] (other) : " + intarray3Dd[1, 0, 2]);
+
+            //using nested loop to show string elements
+            Console.WriteLine("To String element");
+            for (int i = 0; i < 4; i++)
+                for (int j = 0; j < 2; j++)
+                    Console.WriteLine(str[i, j] + " ");
+            
+            
 
 
 
