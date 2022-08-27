@@ -28,34 +28,34 @@
             //Console.WriteLine(currentMinimum);
 
             //AVERAGE VALUE IN AN ARRAY
-            //int[] array = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
+            /*   int[] array = new int[] { 4, 51, -7, 13, -99, 15, -8, 45, 90 };
 
-            //int total = 0;
+               int total = 0;
 
-            //for (int index = 0; index < array.Length; index++)
-            //{
-            //total += array[index];
-            //Console.WriteLine(total);
-            //}
-            //float average = (float)total / array.Length;
-            //Console.WriteLine(average);
+               for (int index = 0; index < array.Length; index++)
+               {
+                   total += array[index];
+                   //Console.WriteLine(total);
+               }
+               float average = (float)total / array.Length;
+               Console.WriteLine(average);*/
 
             //ARRAY OF ARRAYS AND MULTI-DIMENTIONAL ARRAYS
             //array of arrays, or a jagged array(array within a larger array has a different lenght)
-            //int[][] matrix = new int[4][];
+            int[][] matrix = new int[4][];
 
-            //matrix[0] = new int[4];
-            //matrix[1] = new int[5];
-            //matrix[2] = new int[2];
-            //matrix[3] = new int[6];
+            matrix[0] = new int[4];
+            matrix[1] = new int[5];
+            matrix[2] = new int[2];
+            matrix[3] = new int[6];
 
-            //for (int row = 0; row < matrix.Length; row++)
-            //{
-            //for (int column = 0; column < matrix[row].Length; column++)
+            for (int row = 0; row < matrix.Length; row++)
+            {
+            for (int column = 0; column < matrix[row].Length; column++)
             //Console.Write(matrix[row][column] + " "); // Each item in the row separated by spaces
 
-            //Console.WriteLine(); // Rows separated by lines
-            //}
+            Console.WriteLine(); // Rows separated by lines
+            }
 
             //Multi-dimentional array
             //int[,] matrix = new int[4, 4];
@@ -78,12 +78,37 @@
             //Console.WriteLine("Someone had this score: " + score);
 
             //FOR LOOP(To know what index we are at unlike with FOREACH LOOP)
-            int[] scores = new [] { 75, 44, 34, 25, 78, 89, 90, 69, 45, 36 }; ;
-            for (int index = 0; index < scores.Length; index++)
+            /*  int[] scores = new [] { 75, 44, 34, 25, 78, 89, 90, 69, 45, 36 }; ;
+              for (int index = 0; index < scores.Length; index++)
+              {
+                  int score = scores[index];
+                  Console.WriteLine("Score #" + index + ": " + score);
+              }*/
+
+           /* int[,] arr = new int[2, 2 ] { {3,5 }, {9,6 } };
+
+            Console.Out.WriteLine(arr[0,1])*/;
+
+
+
+            //ITERATE OVER AN ARRAY
+            //int[] arr = new[] { 1, 2, 3, 4, 5, 6 };
+
+           /* for(int index = 0; index< arr.Length; index++)
             {
-                int score = scores[index];
-                Console.WriteLine("Score #" + index + ": " + score);
-            }
+                Console.WriteLine(arr[index]);
+            }*/
+
+            //using for loop
+           /* foreach (int no in arr)
+            {
+                Console.WriteLine(no);
+            }*/
+
+
+
+
+            
 
 
 
