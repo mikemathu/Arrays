@@ -42,7 +42,7 @@
 
             //ARRAY OF ARRAYS AND MULTI-DIMENTIONAL ARRAYS
             //array of arrays, or a jagged array(array within a larger array has a different lenght)
-            int[][] matrix = new int[4][];
+         /*   int[][] matrix = new int[4][];
 
             matrix[0] = new int[4];
             matrix[1] = new int[5];
@@ -55,7 +55,7 @@
             //Console.Write(matrix[row][column] + " "); // Each item in the row separated by spaces
 
             Console.WriteLine(); // Rows separated by lines
-            }
+            }*/
 
             //Multi-dimentional array
             //int[,] matrix = new int[4, 4];
@@ -127,29 +127,53 @@
 
 
             //ACCESSING ARRAY ELEMENTS
-            int[] arr; //declaration
+            /*   int[] arr; //declaration
 
-            arr = new int[5]; //Definition
+               arr = new int[5]; //Definition
 
-            arr[0] = 10; //assignning 10 to index 0
+               arr[0] = 10; //assignning 10 to index 0
 
-            Console.WriteLine(arr[0]);
-
-
+               Console.WriteLine(arr[0]);*/
 
 
+            //ACCESSING ARRAY ELEMENTS USING DIFFERENT LOOPS
             
+            int[] intArray;
+
+            intArray = new int[5]; //allocating memory for the 5 integers
+
+            intArray[0] = 10;
+            intArray[1] = 20;
+            intArray[2] = 30;
+            intArray[3] = 40;
+            intArray[4] = 50;
+
+            //accessing the elements using for loop
+            Console.WriteLine("For Loop :");
+            for (int i = 0; i < intArray.Length; i++)
+            {
+                Console.Write(" " + intArray[i]);
+            }
+
+            //using for-each loop
 
 
 
 
 
-            
 
 
 
 
-            
+
+
+
+
+
+
+
+
+
 
 
 
