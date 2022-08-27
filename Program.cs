@@ -164,7 +164,18 @@
                 Console.Write(" " + i);
             }
 
+            //using while loop
+            Console.WriteLine(" ");
+            Console.Write("While Loop :");
 
+            int j = 0;
+            while(j < intArray.Length)
+            {
+                Console.Write(" " + intArray[j]);
+                j++;
+            }
+
+            
 
 
 
