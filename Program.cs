@@ -117,13 +117,23 @@
             //int[] arr = new[] { 1, 2, 3, 4, 5 };
 
             //INITIALIZATION OF AN ARRAY AFTER DECLARATION
-          /*  int[] arr; //Decraration
-            //arr =new int[5] { 1,2,3,4,5};
-            //arr = new int[5];
-            arr =new[] { 1,2,3,4,5};
+            /*  int[] arr; //Decraration
+              //arr =new int[5] { 1,2,3,4,5};
+              //arr = new int[5];
+              arr =new[] { 1,2,3,4,5};
 
-            string[] s;
-            s = new string[2] {"Mike", "Mathu"};*/
+              string[] s;
+              s = new string[2] {"Mike", "Mathu"};*/
+
+
+            //ACCESSING ARRAY ELEMENTS
+            int[] arr; //declaration
+
+            arr = new int[5]; //Definition
+
+            arr[0] = 10; //assignning 10 to index 0
+
+            Console.WriteLine(arr[0]);
 
 
 
