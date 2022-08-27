@@ -149,13 +149,22 @@
             intArray[4] = 50;
 
             //accessing the elements using for loop
-            Console.WriteLine("For Loop :");
+            Console.Write("For Loop :");
             for (int i = 0; i < intArray.Length; i++)
             {
-                Console.Write(" " + intArray[i]);
+                Console.Write(" ");
+                Console.Write(intArray[i]);
             }
 
             //using for-each loop
+            Console.WriteLine(" ");
+            Console.Write("ForEach Loop :");
+            foreach (int i in intArray)
+            {
+                Console.Write(" " + i);
+            }
+
+
 
 
 
