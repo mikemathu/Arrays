@@ -201,10 +201,18 @@
             string[,] str = new string[4, 2] { { "one", "two" }, { "three", "four" }, { "five", "six" }, { "seven", "eight" } };
 
             //Three-dimentional arrays
-            int[,,] intarray3D = new int[,, ] { { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } } };
+            int[,,] intarray3D = new int[,, ] { { 
+                                                { 1, 2, 3 },
+                                                { 4, 5, 6 } },
+                                                { { 7, 8, 9 },
+                                                { 10, 11, 12 } 
+                                              } };
 
             //The same 3D array specified
-            //int[,, ] intarrat3Dd = new int[2,2, 3] { { { 1, 2,3  }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } } };
+            int[,, ] intarray3Dd = new int[2,2, 3] { { { 1, 2, 3 },
+                                                    { 4, 5, 6 } },
+                                                    { { 7, 8, 9 },
+                                                    { 10, 11, 12 } } };
 
             //Accesing array elements
             /*   Console.WriteLine("2DArray[0][0] : " + intarray[0, 0]);
@@ -216,18 +224,31 @@
 
                Console.WriteLine("2DArray[1][0] (other) : " + intarray_d[1, 0]);*/
 
-            //Console.WriteLine("3DArray[1][0][1] (other) : " + intarray3D[1, 0, 1]);
-            //Console.WriteLine("3DArray[1][1][2] (other) : " + intarray3D[1, 1, 2]);
-            //Console.WriteLine("3DArray[0][1][1] (other) : " + intarray3Dd[0, 1, 1]);
-            //Console.WriteLine("3DArray[1][0][2] (other) : " + intarray3Dd[1, 0, 2]);
+            /*Console.WriteLine("3DArray[1][0][1] (other) : " + intarray3D[1, 0, 1]);
+            Console.WriteLine("3DArray[1][1][2] (other) : " + intarray3D[1, 1, 2]);
+            Console.WriteLine("3DArray[0][1][1] (other) : " + intarray3Dd[0, 1, 1]);
+            Console.WriteLine("3DArray[1][0][2] (other) : " + intarray3Dd[1, 0, 2]);*/
 
             //using nested loop to show string elements
-            Console.WriteLine("To String element");
-            for (int i = 0; i < 4; i++)
+            /* Console.WriteLine("2D To String element");
+             for (int i = 0; i < 4; i++)
+                 for (int j = 0; j < 2; j++)
+                     Console.Write(str[i, j] + " ");*/
+
+
+            /*Console.WriteLine("2D Int Elements");
+              for (int i = 0; i < 4; i++)
                 for (int j = 0; j < 2; j++)
-                    Console.WriteLine(str[i, j] + " ");
-            
-            
+                    Console.WriteLine(intarray[i, j] + " ");*/
+
+            Console.WriteLine("3D Elements");
+            for (int i = 0; i < 2; i++)
+                for (int j = 0; j < 2; j++)
+                    for (int k = 0; k < 3; k++)
+                        Console.Write(intarray3Dd[i, j, k] + " ");
+
+
+
 
 
 
