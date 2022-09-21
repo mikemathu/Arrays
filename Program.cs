@@ -1,8 +1,10 @@
 ﻿namespace Arrays {
     class Arrays
-    {
-        static void Main(string[] args)
-        {
+    { 
+
+            static void Main(string[] args)
+        {    
+
             //Arrays Declaration(named location in the memory to stick staff i.e no arrays in it
             //int[] scores;
 
@@ -187,32 +189,34 @@
             } while (k < intArray.Length);*/
 
 
-            //MULTIDIMENTIONAL ARRAYS. To storing and accessing the values of the array, one require the nested loop.
+            //MULTIDIMENTIONAL ARRAYS.
+            //Containt more than one raw
+            //To storing and accessing the values of the array, one require the nested loop.
             //int[,] arr = new int[2,2];
             //int[, ] arry = new int[ , ] { { 1, 2 }, { 1,2} };
 
             //Two-dimentional array
-            int[, ] intarray = new int[,] { {1, 2}, {3,4 }, {5, 6 }, { 7, 8} };
+            //int[, ] intarray = new int[,] { {1, 2}, {3,4 }, {5, 6 }, { 7, 8} };
 
             //same array with dimentions specified
-            int[,] intarray_d = new int[4, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };
+            //int[,] intarray_d = new int[4, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };
 
             //similar array with string elements
-            string[,] str = new string[4, 2] { { "one", "two" }, { "three", "four" }, { "five", "six" }, { "seven", "eight" } };
+            //string[,] str = new string[4, 2] { { "one", "two" }, { "three", "four" }, { "five", "six" }, { "seven", "eight" } };
 
             //Three-dimentional arrays
-            int[,,] intarray3D = new int[,, ] { { 
-                                                { 1, 2, 3 },
-                                                { 4, 5, 6 } },
-                                                { { 7, 8, 9 },
-                                                { 10, 11, 12 } 
-                                              } };
+            //int[,,] intarray3D = new int[,, ] { { 
+            /*  { 1, 2, 3 },
+              { 4, 5, 6 } },
+              { { 7, 8, 9 },
+              { 10, 11, 12 } 
+            } };*/
 
             //The same 3D array specified
-            int[,, ] intarray3Dd = new int[2,2, 3] { { { 1, 2, 3 },
-                                                    { 4, 5, 6 } },
-                                                    { { 7, 8, 9 },
-                                                    { 10, 11, 12 } } };
+            // int[,, ] intarray3Dd = new int[2,2, 3] { { { 1, 2, 3 },
+            /*   { 4, 5, 6 } },
+               { { 7, 8, 9 },
+               { 10, 11, 12 } } };*/
 
             //Accesing array elements
             /*   Console.WriteLine("2DArray[0][0] : " + intarray[0, 0]);
@@ -241,12 +245,52 @@
                 for (int j = 0; j < 2; j++)
                     Console.WriteLine(intarray[i, j] + " ");*/
 
-            Console.WriteLine("3D Elements");
+            /*Console.WriteLine("3D Elements");
             for (int i = 0; i < 2; i++)
                 for (int j = 0; j < 2; j++)
                     for (int k = 0; k < 3; k++)
-                        Console.Write(intarray3Dd[i, j, k] + " ");
+                        Console.Write(intarray3Dd[i, j, k] + " ");*/
 
+
+
+            //JAGGED ARRAYS
+            //an array whose elements are arrays. "Array of Arrays"
+            //may be of different dimentions and sizes
+
+          /*  int[][] arr = new int[2][]; //declaring the array of 2 elements
+
+            //initializing the elements
+            arr[0] = new int[5] { 1, 3, 5, 7, 9 };
+            arr[1] = new int[4] { 2, 4, 6, 8 };
+
+            //another way of decraring and initializing of elements
+            int[][] arr1 = { new int[] { 1,3,5,7,9},
+                             new int[] {2, 4, 6, 8 } };
+
+            //Display the array elements
+            for (int i = 0; i < arr.Length; i++ )
+            {
+                Console.Write("Element [" + i + "]Array: ");
+                for (int j = 0; j < arr[i].Length; j++)
+                    Console.Write(arr[i][j] + " ");
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("Another array");
+
+            //Display the another array elements
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                Console.Write("Element [" + i + "] Array: ");
+                for (int j = 0; j < arr1[i].Length; j++)
+                    Console.Write(arr1[i][j] + " ");
+
+                Console.WriteLine();
+            }*/
+
+            //
+
+           }
 
 
 
